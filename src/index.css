@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Cinzel&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300&family=Patrick+Hand&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Grotesk&display=swap");
+
+@layer base {
+  body {
+    @apply font-['Montserrat'];
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  block-size: cover;
+  background-position: center;
+  height: 250px;
+}

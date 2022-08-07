@@ -4,27 +4,50 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 export const NavBar = () => {
   const [toggle, setToggle] = useState(true);
   const handleOnClick = () => setToggle(!toggle);
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#ffffff]">
-      <div>
-        <img
-          src={garry}
-          alt="garry_logo"
-          style={{ width: "160px", height: "150px", paddingTop: "5px" }}
-        />
+      <div className="cursor-pointer">
+        <Link to="hero" smooth={true} duration={500}>
+          <img
+            src={garry}
+            alt="garry_logo"
+            style={{ width: "160px", height: "150px", paddingTop: "5px" }}
+          />
+        </Link>
       </div>
 
       {/*  menu */}
       <ul className="hidden md:flex ">
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Contact Me</li>
+        <li>
+          <Link to="hero" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth={true} duration={500}>
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link to="works" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact Me
+          </Link>
+        </li>
       </ul>
 
       {/* hamburger  */}
@@ -41,11 +64,56 @@ export const NavBar = () => {
         }
       >
         <ul>
-          <li className="py-10 text-2xl">Home</li>
-          <li className="py-10 text-2xl">About Me</li>
-          <li className="py-10 text-2xl">Projects</li>
-          <li className="py-10 text-2xl">Skills</li>
-          <li className="py-10 text-2xl">Contact Me</li>
+          <li className="py-10 text-2xl">
+            <Link
+              onClick={handleOnClick}
+              to="hero"
+              smooth={true}
+              duration={500}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="py-10 text-2xl">
+            <Link
+              onClick={handleOnClick}
+              to="about"
+              smooth={true}
+              duration={500}
+            >
+              About Me
+            </Link>
+          </li>
+          <li className="py-10 text-2xl">
+            <Link
+              onClick={handleOnClick}
+              to="works"
+              smooth={true}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="py-10 text-2xl">
+            <Link
+              onClick={handleOnClick}
+              to="skills"
+              smooth={true}
+              duration={500}
+            >
+              Skills
+            </Link>
+          </li>
+          <li className="py-10 text-2xl">
+            <Link
+              onClick={handleOnClick}
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
+              Contact Me
+            </Link>
+          </li>
         </ul>
       </div>
 

@@ -2,10 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-[black] text-[white] h-[80vh] flex justify-center  p-4">
+    <div className="bg-[black] text-[white] h-[65vh] flex justify-center  p-4">
       <form
-        action=""
+        action="https://getform.io/f/9788c421-d475-4e22-a35f-8cddac0545ec"
         className="flex flex-col max-w-[800px] w-full pt-4 text-center"
+        method="post"
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-t-4 border-pink-600 text-[white]">

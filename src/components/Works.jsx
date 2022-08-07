@@ -71,7 +71,7 @@ const Works = () => {
                     style={{ width: 250, height: 250 }}
                     src={img}
                     alt=""
-                    className="rounded-md duration-300 hover:scale-105  "
+                    className="rounded-md duration-300 hover:scale-105 mt-1 "
                   />
                 </div>
                 <div className="flex items-center justify-around">

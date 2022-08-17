@@ -121,7 +121,8 @@ export const NavBar = () => {
         <ul>
           <li className="w-[140px] h-[40px] flex justify-between items-center ml-[-95px] hover:ml-[-10px] duration-500 bg-[#0072b1] ">
             <a
-              href="/"
+              href="https://linkedin.com/in/garry-amasia"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Linkedin <FaLinkedin size={20} />
@@ -129,7 +130,7 @@ export const NavBar = () => {
           </li>
           <li className="w-[140px] h-[40px] flex justify-between items-center ml-[-95px] hover:ml-[-10px] duration-500 bg-[#2e2929]">
             <a
-              href="/"
+              href="https://github.com/GarryAmasia"
               className="flex justify-between items-center w-full text-gray-300"
             >
               GitHub <FaGithub size={20} />
@@ -145,7 +146,8 @@ export const NavBar = () => {
           </li>
           <li className="w-[140px] h-[40px] flex justify-between items-center ml-[-95px] hover:ml-[-10px] duration-500 bg-[#ada428]">
             <a
-              href="/"
+              href="GARRY AMASIA - RESUME.pdf"
+              download="GARRY AMASIA - RESUME.pdf"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Resume <BsFillPersonLinesFill size={20} />
